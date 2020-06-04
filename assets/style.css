@@ -1,0 +1,47 @@
+body {
+  font-family: 'Lato';
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -375px;
+  width: 750px;
+  height: 80px;
+  animation-name: fadeIn;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+}
+
+.header img {
+  width: 750px;
+  height: 80px;
+}
+
+@media (max-width: 750px) {
+
+  .container {
+    width: 100%;
+    margin-left: -50%;
+    height: 80px;
+    margin-top: -40px;
+  }
+
+  .header img {
+    width: 350px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
